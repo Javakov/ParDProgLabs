@@ -45,3 +45,17 @@ tasks.register<JavaExec>("runTsp") {
     classpath = sourceSets.main.get().runtimeClasspath
     mainClass.set("org.javakov.tsp.TspApp")
 }
+
+tasks.register<JavaExec>("runMagic") {
+    group = "application"
+    description = "Запускает генерацию магических квадратов"
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("org.javakov.magic.MagicSquareApp")
+}
+
+tasks.register<JavaExec>("runBrothers") {
+    group = "application"
+    description = "Ищет «собратьев» для заданного произведения"
+    classpath = sourceSets.main.get().runtimeClasspath
+    mainClass.set("org.javakov.brothers.BrothersApp")
+}
